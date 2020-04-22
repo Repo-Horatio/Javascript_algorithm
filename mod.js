@@ -11,4 +11,5 @@ function mod(num1, num2) {
   }
 }
 
-mod(101, 5) // 5
+mod(101, 5) // 1
+mod(100,5) // 0
