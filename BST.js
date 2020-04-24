@@ -1,4 +1,4 @@
-/* This code is not what i wrote from scratch. for studying. */
+/* This code is not what i wrote from scratch. for studying, i added some notations instead. */
 
 function Node(value, left, right){
   this.value = value;
