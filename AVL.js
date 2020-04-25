@@ -1,4 +1,4 @@
-/* AVL tree - similar with Binary Search Tree,   -2 < different height between left, right subtree of a node < 2,
+/* AVL tree - similar with Binary Search Tree,   -2 < difference between left, right subtree of height on a node < 2,
 I didn't write this code from scratch. instead i added some notations */
 
 function Node(val, Parent, Left, Right){
