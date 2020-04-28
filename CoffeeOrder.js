@@ -18,4 +18,4 @@ function customer(){
 }
 
 Lee = customer()
-Lee.serveOrder()
+Lee.serveOrder()   // Order Number: 1  Coffee: cappuccino
