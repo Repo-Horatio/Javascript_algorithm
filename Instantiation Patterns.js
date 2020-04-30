@@ -1,6 +1,6 @@
 // Instantiation Patterns
 
-// Functional
+//////// Functional
 
 var Robot = function(power=0){
     let info={};
@@ -18,7 +18,7 @@ let robot2 = Robot(5);
 robot1.upgrade(); // power: 1  upgrade completed
 robot2.upgrade(); // power: 6  upgrade completed
 
-// Functional Shared
+//////// Functional Shared
 
 var transfer = function(to, from){
     for(let key in from){
@@ -41,10 +41,11 @@ var Robot = function(power=0){
      return infos;
 };
 
-robot1=Robot()  // power: 1  upgrade completed
+robot1=Robot()  
+robot1.upgrade();  // power: 1  upgrade completed
 
 
-// Prototypal
+//////// Prototypal
 
 var info={};
 info.upgrade=function(){
@@ -63,7 +64,7 @@ robot1=Robot()
 robot1.upgrade() // power: 1  upgrade completed
 
 
-// Pseudoclassical
+/////// Pseudoclassical
 
 var Robot = function(power=0){
     this.power=power
