@@ -1,21 +1,21 @@
 // https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Object/create
 
-// Shape - parent/upper class
+// Shape - parent
 function Shape() {
     this.x = 0;
     this.y = 0;
   }
   
-  // parent class method
+  // parent method
   Shape.prototype.move = function(x, y) {
     this.x += x;
     this.y += y;
     console.info('Shape moved.');
   };
   
-  // Rectangle - child class, 하위클래스
+  // Rectangle - child
   function Rectangle() {
-    Shape.call(this); // super constructor call.
+    Shape.call(this); // call constructor of parent.
   }
 
 
@@ -39,10 +39,10 @@ function Shape() {
 
   console.log(Rectangle.prototype.constructor);
 //   ƒ Rectangle() {
-//     Shape.call(this); // super constructor call.
+//     Shape.call(this); // call constructor of parent.
 //   }
 
   console.log(Shape.prototype.constructor);
 //   ƒ Rectangle() {    --> changed to Rectangle 
-//     Shape.call(this); // super constructor call.
+//     Shape.call(this); // call constructor of parent.
 //   }
