@@ -1,21 +1,21 @@
 // https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Object/create
 
-// Shape - upper class
+// Shape - parent
 function Shape() {
   this.x = 0;
   this.y = 0;
 }
 
-// upper class method
+// parent method
 Shape.prototype.move = function(x, y) {
   this.x += x;
   this.y += y;
   console.info('Shape moved.');
 };
 
-// Rectangle - child class
+// Rectangle - child 
 function Rectangle() {
-  Shape.call(this); // super constructor call.
+  Shape.call(this); // calling constructor of parent. in class way, it is 'super()'
 }
 
 console.log(Rectangle.prototype); // {constructor: ƒ}
@@ -30,7 +30,7 @@ console.log(Rectangle.prototype.__proto__); // {constructor: ƒ, __defineGetter_
 
 
 
-// child class extends parent/upper class
+// child extends parent
 Rectangle.prototype = Object.create(Shape.prototype);
 
 console.log(Rectangle.prototype);  // Shape {}, no constructor property so make one and need to indicate original function used to make itself
