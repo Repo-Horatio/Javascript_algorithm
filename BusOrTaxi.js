@@ -46,7 +46,7 @@ Taxi.prototype.start=function(destination, money){
 
 
   var name = 'Christopher';
-  var Chris = new takingtaxi(name);
+  var Chris = new Taxi(name);
   var destination = 'home';
   var money = 1000;
   var result = Chris.start(destination, money);
@@ -54,7 +54,7 @@ Taxi.prototype.start=function(destination, money){
 
 
   var name = 'Johnathan';
-  var John = new takingtaxi(name);
+  var John = new Taxi(name);
   var destination = 'home';
   var money = 60;
   var result = John.start(destination, money);
