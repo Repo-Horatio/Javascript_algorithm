@@ -32,15 +32,14 @@ Bus.prototype.start=function(destination){
 }
 
 
-var Taxi = function(name, color) {
+var Taxi = function(name) {
   this.name=name;
-  this.color=color;
 }
 Taxi.prototype=Object.create(Bus.prototype);
 Taxi.prototype.constructor=Taxi;
-Taxi.prototype.start=function(destination, distance){
+Taxi.prototype.start=function(destination, money){
  let newtaxi=new takingtaxi(this.name);
- return newtaxi.start(destination, distance);
+ return newtaxi.start(destination, money);
 }
 
 
