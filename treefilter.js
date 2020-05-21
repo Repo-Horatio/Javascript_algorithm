@@ -4,7 +4,7 @@ let Tree = function(value) {
   this.children = [];
 };
 
-Tree.prototype.DFSelect = function(filter) {
+Tree.prototype.treefilter = function(filter) {
   let result=[];
   let depth=0;
   function traverse(tree, depth){
