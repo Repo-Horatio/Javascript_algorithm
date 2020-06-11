@@ -7,7 +7,7 @@ var fractionTransformer = function(number) {
   if(Number.isInteger(number)) return `${number}/1`
 
   let arrayed=String(number).split('.');
-  let underDecimal=arrayed[1].length;
+  let underDecimal=arrayed[1].length;   // if(arrayed[1]===undefined) {underDecimal=0; arrayed[0]=0;}
   let numerator=Number(arrayed[1])
   let denominator=Math.pow(10,underDecimal);
   
