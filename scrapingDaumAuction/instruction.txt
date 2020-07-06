@@ -1,1 +1,5 @@
 2020.07.05
+
+make folder named 'items' to save scraped pictures
+
+node daumAuction.js
