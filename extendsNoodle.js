@@ -21,8 +21,19 @@ class Product extends Noodle{
 const seafoodNoodle=new Product("seafood", '1500'); // Product {}
 const soybeanNoodle=new Product('soybean','1200'); // Product {}
 
-seafoodNoodle.info() // seafood is 1500 won
-seafoodNoodle.intro() // seafood * 1 == 1500
+seafoodNoodle.info(); // seafood is 1500 won
+seafoodNoodle.intro(); // seafood * 1 == 1500
 
-soybeanNoodle.info() // soybean is 1200 won
-soybeanNoodle.intro() // soybean * 1 == 1200
+soybeanNoodle.info(); // soybean is 1200 won
+soybeanNoodle.intro(); // soybean * 1 == 1200
+
+seafoodNoodle.appeal=function(){
+    console.log(`This menu is ${this.name}`);
+}
+
+soybeanNoodle.appeal=function(){
+    console.log(`This menu is ${this.name}`);
+}
+
+seafoodNoodle.appeal(); // This menus is seafood
+soybeanNoodle.appeal(); // This menus is soybean
