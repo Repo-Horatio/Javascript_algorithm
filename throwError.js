@@ -6,6 +6,7 @@ const multiply=(a,b)=>{
 };
 
 try{
+    console.log(multiply(5,10)); // 50
     console.log(multiply(5));
 } catch(error){
     console.log('detected error');
