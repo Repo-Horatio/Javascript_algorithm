@@ -1,6 +1,6 @@
 let item={name:'iphone'}
 
-window.localStorage.setItem('theItem', JSON.stringify(item));
+window.localStorage.setItem('theItem', JSON.stringify(item)); // string only
 
 window.localStorage.getItem('theItem'); // "{"name":"iphone"}"
 
