@@ -18,3 +18,8 @@
 
 var myForm = document.getElementById('myForm');
 let formData = new FormData(myForm);
+
+var xhr = new XMLHttpRequest();
+
+xhr.open("POST", "http://localhost:8000");  
+xhr.send(formData);
