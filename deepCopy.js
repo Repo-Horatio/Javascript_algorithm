@@ -10,3 +10,4 @@ copy2.push('charger');
 console.log(items); // [ 'notebook', 'watch', 'charger' ]
 console.log(copy2); // [ 'notebook', 'watch', 'charger' ]
 
+// JSON.parse(JSON.stringify(obj));
