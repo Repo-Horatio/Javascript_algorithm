@@ -9,4 +9,6 @@ function level1(){
     }
 }
 
+// const levels=(level1)=>(level2)=>(level3)=>console.log(`${level1} ${level2} ${level3}`);
+
 console.log(level1()()()); // a b c     a,b from memory heap, not call stack (Closure)
