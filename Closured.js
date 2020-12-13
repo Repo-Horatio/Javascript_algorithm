@@ -9,6 +9,15 @@ function level1(){
     }
 }
 
+function hi(idx){
+    const arr=new Array(100).fill('hi');
+    console.log('done');
+    return arr[idx];
+}
+
+console.log(hi(50));
+console.log(hi(50));
+
 // const levels=(level1)=>(level2)=>(level3)=>console.log(`${level1} ${level2} ${level3}`);
 
 console.log(level1()()()); // a b c     a,b from memory heap, not call stack (Closure)
