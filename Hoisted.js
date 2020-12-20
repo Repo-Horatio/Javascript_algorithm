@@ -4,3 +4,8 @@ function display() {
     console.log(x); // 10
   }
   display();
+
+display1(); // this works
+function display1(){
+  console.log('this works');
+};
