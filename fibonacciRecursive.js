@@ -1,5 +1,4 @@
 function fibonacciRecursive() {
-  let result=0;
   let count=0
   let bool=true
   return function (){
@@ -11,21 +10,21 @@ function fibonacciRecursive() {
       } else if(bool===true){
         cnt=count
       }
-      if(cnt===0){
+      if(cnt===0){ // first
         if(bool===true){
         count=count+1
         }
         bool=true
         return 0;
       }
-      else if(cnt===1){
+      else if(cnt===1){ // second
         if(bool===true){
         count=count+1
         }
         bool=true
         return 1;
       }
-      else if(cnt>=2){
+      else if(cnt>=2){ // from third
        if(bool===true){
         count=count+1
        }
