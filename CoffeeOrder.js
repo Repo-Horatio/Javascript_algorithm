@@ -17,5 +17,5 @@ function customer(){
     }
 }
 
-Lee = customer()
-Lee.serveOrder()   // Order Number: 1  Coffee: cappuccino
+let Lee = customer();
+Lee.serveOrder();   // Order Number: 1  Coffee: cappuccino

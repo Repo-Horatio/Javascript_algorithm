@@ -18,8 +18,8 @@ function customer(menu){
     }
 }
 
-Lee = customer('latte')
-Lee.serveOrder()    // Order Number: 1  Coffee: latte
+let Lee = customer('latte');
+Lee.serveOrder();    // Order Number: 1  Coffee: latte
 
-Kim=customer('cappuccino')
-Kim.serveOrder()   // Order Number: 2  Coffee: cappuccino
+let Kim=customer('cappuccino');
+Kim.serveOrder();   // Order Number: 2  Coffee: cappuccino
