@@ -17,14 +17,16 @@ class BinarySearchTree {
       if(cur.value < value){
         if(cur.right ===null){
           cur.right = node;
-        } else
-        cur = cur.right;
+        } else{
+           cur = cur.right;
+          }
       }
       else if(cur.value > value){
         if(cur.left === null){
           cur.left =node ;
-        } else
-        cur = cur.left;
+        } else {
+           cur = cur.left;
+          }
       }
     }
 
@@ -37,20 +39,23 @@ class BinarySearchTree {
       if(cur.value < value){
         if(cur.right ===null){
           break;
-        } else
-        cur = cur.right;
+        } else {
+            cur = cur.right;
+          }
       }
       else if(cur.value > value){
         if(cur.left === null){
           break;
-        } else
-        cur = cur.left;
+        } else {
+            cur = cur.left;
+          }
       }
     }
-   if(cur.value === value){
-     return true;
-   } else 
-   return false;
+    if(cur.value === value){
+      return true;
+    } else {
+        return false;
+      }
 
 
   }
