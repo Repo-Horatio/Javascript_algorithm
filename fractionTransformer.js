@@ -33,7 +33,7 @@ var fractionTransformer = function(number) {
     }
    }
 
-if(number<0) return `${Number(arrayed[0])*denominator-numerator}/${denominator}`
+if(number<0) return `${Number(arrayed[0])*denominator-numerator}/${denominator}` // String(-1.05).split('.');  // ["-1", "05"]
 else if(number>=0) return `${Number(arrayed[0])*denominator+numerator}/${denominator}`
 
 }
