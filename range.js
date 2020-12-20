@@ -22,9 +22,10 @@ Range.prototype.each = function (callback) {
             callback(this.start+1*i)
         }
     }
-    else
-    for(let i=0 ; i<this.size() ; i++){
-        callback(this.start+this.step*i)
+    else {
+        for(let i=0 ; i<this.size() ; i++){
+            callback(this.start+this.step*i)
+        }
     }
 };
 
