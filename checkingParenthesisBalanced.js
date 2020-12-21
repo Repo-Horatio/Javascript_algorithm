@@ -56,7 +56,7 @@ var checkingParenthesisBalanced = function(input){
             if(input[i] !== parenthesis[check]) return false;  
         }
     }
-    if(stack.length !== 0) return false;
+    if(items.length !== 0) return false;
     else return true;
 };
 
