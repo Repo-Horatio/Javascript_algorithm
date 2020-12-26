@@ -13,3 +13,7 @@ var func = function(a, b){ return a * b };
 var boundFunc = bind(func, null, '10');
 var result = boundFunc('20');
 console.log(result); // 200
+
+// Function.prototype.bind = function(context) {
+//   let func = this;
+//   return func.apply(context, combinedArgs);
