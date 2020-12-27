@@ -5,7 +5,7 @@ var bind = function(func, context) {
       console.log('2', arguments); // 2 [Arguments] { '0': '20' }
       let curArgs = [].slice.call(arguments); // closured  arguments
       let combinedArgs = [].concat(prevArgs, curArgs);
-      return func.apply(context, combinedArgs);
+      return func.apply(context, combinedArgs); // apply(this, array)
     }
   };
 
