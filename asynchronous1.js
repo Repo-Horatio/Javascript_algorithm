@@ -129,3 +129,28 @@ const prints= string =>{
   }
 
   result();  // is thiis working?
+
+
+    /// 6. Promise.all
+
+    function is(){
+      return new Promise((resolve, reject)=>{
+        setTimeout(()=>{resolve("is")}, 500)
+      })
+    }
+  
+    function thiis(){
+      return new Promise((resolve, reject)=>{
+        setTimeout(()=>{resolve("thiis")},200)
+      })
+    }
+  
+    function working(){
+      return new Promise((resolve, reject)=>{
+        setTimeout(()=>{resolve("working?")},300)
+      })
+    }  
+
+    Promise.all([is(), thiis(), working()]).then((values)=>{
+      console.log(values); // ["is", "thiis", "working?"]
+    });
