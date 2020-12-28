@@ -6,4 +6,5 @@ console.log(temp); // [ 'abc' ]
 
 let arr=[];
 arr[5]='an item';
+console.log(typeof arr[0], typeof arr[5]); //  undefined string
 console.log(arr); // [ <5 empty items>, 'an item' ]
