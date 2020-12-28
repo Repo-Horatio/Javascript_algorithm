@@ -3,5 +3,5 @@ function menu(appetizer, main) {
 }
 
 var appetizerServed = menu.bind(this, "salmon salad");
-console.log(appetizerServed('beaf steak')); // salmon salad was good, let's try beaf steak now
+console.log(appetizerServed('beef steak')); // salmon salad was good, let's try beef steak now
 
