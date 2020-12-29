@@ -8,7 +8,7 @@ Tree.prototype.treefilter = function(filter) {
   let result=[];
   let depth=0;
   function traverse(tree, depth){
-    if(filter(tree.value, depth)){
+    if(filter(tree.value, depth)){ // true or false
      result.push(tree.value);
     }
     depth++
