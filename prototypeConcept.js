@@ -1,4 +1,5 @@
 // __proto__ is a reference or pointer to upper prototype
+// Object Oriented Programming : Class based, Prototype based programming
 
 let apple = {
     guaranteed: true,
@@ -25,3 +26,13 @@ let apple = {
   
   let arr=[];
   console.log(arr.__proto__.hasOwnProperty('map')); // true
+
+
+  function multiply(a,b){
+    return a*b
+  }
+
+  console.log(multiply.__proto__); // [Function]
+  console.log(Function.prototype); // [Function]
+  console.log(typeof Object); // function    Object constructor
+  console.log(typeof {}); // object
