@@ -1,3 +1,5 @@
+// __proto__ is a reference or pointer to upper prototype
+
 let apple = {
     guaranteed: true,
     promote() {
