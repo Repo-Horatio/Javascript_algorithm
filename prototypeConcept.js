@@ -21,3 +21,4 @@ let apple = {
   }
 
   console.log(apple.isPrototypeOf(iphone)); // true
+  console.log(function(){}.constructor===Function); // true
