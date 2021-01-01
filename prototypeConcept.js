@@ -22,3 +22,6 @@ let apple = {
 
   console.log(apple.isPrototypeOf(iphone)); // true
   console.log(function(){}.constructor===Function); // true
+  
+  let arr=[];
+  console.log(arr.__proto__.hasOwnProperty('map')); // true
