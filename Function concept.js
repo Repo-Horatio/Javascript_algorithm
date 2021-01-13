@@ -10,4 +10,4 @@ console.log(apple.item); // Mac
 // 'new' keyword creates Display constructor and it constructs Display function
 
 console.log(apple.__proto__); //  Display {}
-console.log(Display.prototype); // Display {}
+console.log(Display.prototype); // Display {}q
