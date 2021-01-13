@@ -1,5 +1,5 @@
 function quest02(){
-    if(!process.argv[2]) throw Error("You need to put an argument to use this one");
+    if(!process.argv[2]) throw Error("You need to put an argument to use this one for example node quest02.js 5");
     const height=process.argv[2];
     
     for(let i=0; i<height; i++){
