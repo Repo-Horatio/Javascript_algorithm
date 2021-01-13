@@ -7,7 +7,7 @@ function quest02(){
         let dot='';
         // console.log(front);
         for(let d=0; d<front; d++){
-            dot=dot+'\xa0'
+            dot=dot+'\xa0' // dot+' '
         }
         for(let j=0; j<2*i+1; j++){
             dot += '*';      // '*'.repeat(2*i+1);
@@ -18,6 +18,11 @@ function quest02(){
 
 quest02();
 
+// function printing(num, letter){
+//     let arr=new Array(num);
+//     arr.fill(letter);
+//     return arr.join('');
+// }
 
 // node quest02.js 6
 //                                *
