@@ -1,7 +1,7 @@
 function quest02(){
-    if(!process.argv[2]) throw Error("You need to put an argument to use this one for example node quest02.js 5");
+    if(!process.argv[2]) throw Error("You need to put a number type argument to use this one. for example, node quest02.js 5");
     const height=process.argv[2];
-    
+    // console.log(typeof height)
     for(let i=0; i<height; i++){
         let front=(height+1)/2-i;
         let dot='';
