@@ -10,7 +10,7 @@ function quest02(){
             dot=dot+'\xa0'
         }
         for(let j=0; j<2*i+1; j++){
-            dot += '*';
+            dot += '*';      // '*'.repeat(2*i+1);
         }
         console.log(dot);
     }
