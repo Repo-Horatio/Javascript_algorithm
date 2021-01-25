@@ -16,7 +16,6 @@ encode.fit(series);
 let sf_enc = encode.transform(series);
 let new_sf = encode.transform(["Apple"]);
 sf_enc.print();
-new_sf.print();
 // ╔═══╤═══════════════════╤═══════════════════╤═══════════════════╗
 // ║   │ Apple             │ Banana            │ Mango             ║
 // ╟───┼───────────────────┼───────────────────┼───────────────────╢
