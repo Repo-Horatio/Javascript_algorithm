@@ -9,15 +9,16 @@
 //        console.log(err);
 //   })
 
-let data1 = ["dog","cat","man"];
+let data1 = ["Apple","Banana","Mango"];
 let series = new dfd.Series(data1);
 let encode = new dfd.OneHotEncoder();   // LabelEncoder(), OneHotEncoders, LabelEncoders, StandardScaler, MinMaxScaler
 encode.fit(series);
 let sf_enc = encode.transform(series);
-let new_sf = encode.transform(["dog","man"]);
+let new_sf = encode.transform(["Apple"]);
 sf_enc.print();
+new_sf.print();
 // ╔═══╤═══════════════════╤═══════════════════╤═══════════════════╗
-// ║   │ dog               │ cat               │ man               ║
+// ║   │ Apple             │ Banana            │ Mango             ║
 // ╟───┼───────────────────┼───────────────────┼───────────────────╢
 // ║ 0 │ 1                 │ 0                 │ 0                 ║
 // ╟───┼───────────────────┼───────────────────┼───────────────────╢
@@ -28,9 +29,7 @@ sf_enc.print();
 
 new_sf.print();
 // ╔═══╤═══════════════════╤═══════════════════╤═══════════════════╗
-// ║   │ dog               │ cat               │ man               ║
+// ║   │ Apple             │ Banana            │ Mango             ║
 // ╟───┼───────────────────┼───────────────────┼───────────────────╢
 // ║ 0 │ 1                 │ 0                 │ 0                 ║
-// ╟───┼───────────────────┼───────────────────┼───────────────────╢
-// ║ 1 │ 0                 │ 0                 │ 1                 ║
 // ╚═══╧═══════════════════╧═══════════════════╧═══════════════════╝
