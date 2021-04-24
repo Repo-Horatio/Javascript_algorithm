@@ -1,0 +1,5 @@
+{
+  "presets": ["@babel/preset-env"]
+} 
+
+// @babel/preset-env for transpiling ES6 to ES5
