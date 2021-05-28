@@ -11,5 +11,13 @@ let sleep1=((time) => {
      })
  });
 
+ let sleep2=((time) => {
+    return new Promise((resolve, reject) => {
+        resolve(setTimeout(()=>{
+            console.log('done!') }, time))
+    })
+});
+
  sleep(5000);
  sleep1(5000);
+ sleep2(5000);
